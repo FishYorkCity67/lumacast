@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' file:; script-src 'self' file: blob:; worker-src 'self' file: blob:; style-src 'self' file: 'unsafe-inline'; img-src 'self' file: data: blob: https:; media-src 'self' file: blob: mediastream:; connect-src 'self' file: blob: data:; font-src 'self' file: data:">
+<title>Lumacast</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div id="app" class="app">
+  <header class="topbar" id="topbar"></header>
+  <main class="workspace">
+    <aside class="col col-left">
+      <section class="card" id="scenes-panel" style="--i:0; max-height: 40%"></section>
+      <section class="card grow" id="sources-panel" style="--i:1"></section>
+    </aside>
+    <section class="col col-center">
+      <div class="card stage-card" id="stage-panel" style="--i:2"></div>
+      <div class="dock">
+        <section class="card" id="mixer-panel" style="--i:3"></section>
+        <section class="card controls" id="controls-panel" style="--i:4"></section>
+      </div>
+    </section>
+    <aside class="col col-right">
+      <section class="card" id="dest-panel" style="--i:5; max-height: 46%"></section>
+      <section class="card grow" id="chat-panel" style="--i:6"></section>
+    </aside>
+  </main>
+  <footer class="statusbar" id="statusbar"></footer>
+</div>
+<div id="layer-modals"></div>
+<div id="layer-toasts" class="toasts"></div>
+<div id="layer-menu"></div>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

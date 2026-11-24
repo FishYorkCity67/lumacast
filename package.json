@@ -1,0 +1,9 @@
+{
+  "name": "lumacast",
+  "productName": "Lumacast",
+  "version": "1.0.0",
+  "description": "Multistream studio for Twitch, YouTube and TikTok with a dual 16:9 + 9:16 canvas",
+  "main": "src/main/main.js",
+  "private": true,
+  "license": "MIT"
+}
